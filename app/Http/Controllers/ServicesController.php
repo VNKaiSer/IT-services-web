@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 class ServicesController extends Controller
 {
     public function index()
     {
-        $services = DB::table('services')->get();
-        return view('services', ['services' => $services]);
+        $services = Service::all();
+        return view('services.index', compact('services'));
     }
 }
