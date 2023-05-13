@@ -22,13 +22,13 @@
                     </div>
                     <div class="services-content">
                         <h2 class="services-heading">
-                        {{ $service->title  }}
+                        {{ $service->name  }}
                         </h2>
                         <p class="services-desc">
                         {{ $service->description }}
                         </p>
                         <p class="services-desc-children"></p>
-                        <a href="./contact1.html"
+                        <a href="{{ route('services.dentail', ['id' => $service->id]) }}"
                         ><button class="button-black">Read more</button></a
                         >
                     </div>
@@ -36,13 +36,13 @@
                 }@else{
                     <div class="services-content">
                         <h2 class="services-heading">
-                        {{ $service->title  }}
+                        {{ $service->name  }}
                         </h2>
                         <p class="services-desc">
                         {{ $service->description }}
                         </p>
                         <p class="services-desc-children"></p>
-                        <a href="./contact1.html"
+                        <a href="{{ route('services.dentail', ['id' => $service->id]) }}"
                         ><button class="button-black">Read more</button></a
                         >
                     </div>

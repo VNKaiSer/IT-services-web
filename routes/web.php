@@ -4,7 +4,6 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContractController;
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ServicesController;
 
@@ -28,6 +27,7 @@ Route :: get('/', [
 
 #services route
 Route :: get('/services', [ServicesController::class, 'index'])->name('services');
+Route :: get('/services/{id}', [ServicesController::class, 'dentail'])->name('services.dentail');
 
 #about route
 Route::get('/about',[AboutController::class,'index'])->name('about');
