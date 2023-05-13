@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContractController;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PagesController;
@@ -15,33 +18,22 @@ use App\Http\Controllers\ServicesController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+#home route
 Route :: get('/', [
     PagesController::class,
     'index'
 ])->name('home');
 
-Route :: get('/about', [
-    PagesController::class,
-    'about'
-]);
-
-Route :: get('/products', [
-    ProductController::class,
-    'index'
-])->name('products');
-
-Route :: get('/products/{atribute}/{id}', [
-    ProductController::class,
-    'detail'
-])->where([
-            'id'=> '[0-9]+',
-            'atribute' => '[a-zA-Z]+'
-        ]); // use validate
 
 
-
+#services route
 Route :: get('/services', [ServicesController::class, 'index'])->name('services');
 
-Route::get('/about', function () {
-    return view('abouts.index');
-})->name('about');
+#about route
+Route::get('/about',[AboutController::class,'index'])->name('about');
+
+#news route
+Route::get('/news', [NewsController::class,'index'])->name('news');
+
+#contact route
+Route::get('/contact', [ContractController::class, 'index'])->name('contact');

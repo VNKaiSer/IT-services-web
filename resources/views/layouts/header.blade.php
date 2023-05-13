@@ -3,7 +3,7 @@
       <div class="container">
         <div class="header-container">
           <div class="header-logo">
-            <a href="#">
+            <a href="{{ route('home') }}">
               <img srcset="./Images/logo.png 2x" alt=""
             /></a>
           </div>
@@ -18,13 +18,13 @@
               <a href="{{ route('services') }}" class="menu-link">Services</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">News</a>
+              <a href="{{ route('news') }}" class="menu-link">News</a>
             </li>
-            <a href="#"
+            <a href="{{ route('contact') }}"
               ><button class="button button-border">Contact us</button></a
             >
           </ul>
         </div>
       </div>
     </div>
-  </header>
+</header>
