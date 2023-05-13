@@ -40,4 +40,8 @@ Route :: get('/products/{atribute}/{id}', [
 
 
 
-Route :: get('/services', [ServicesController::class, 'index']);
+Route :: get('/services', [ServicesController::class, 'index'])->name('services');
+
+Route::get('/about', function () {
+    return view('abouts.index');
+})->name('about');

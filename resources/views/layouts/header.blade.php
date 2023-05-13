@@ -12,10 +12,10 @@
               <a href="{{ route('home') }}" class="menu-link">Home</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">About us</a>
+              <a href="{{ route('about') }}" class="menu-link">About us</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Services</a>
+              <a href="{{ route('services') }}" class="menu-link">Services</a>
             </li>
             <li class="menu-item">
               <a href="#" class="menu-link">News</a>

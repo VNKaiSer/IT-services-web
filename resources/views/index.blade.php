@@ -1,9 +1,8 @@
 @extends('layouts.app')
 @section('content')
-    @include('simple')
-    @include('about')
-    @include('number')
-    @include('wedo')
-    @include('lastest')
+    @include('home.simple')
+    @include('home.about')
+    @include('home.number')
+    @include('home.wedo')
+    @include('home.lastest')
 @endsection
-
