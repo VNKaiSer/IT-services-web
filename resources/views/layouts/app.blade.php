@@ -13,30 +13,20 @@
     />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="{{ asset('css/style.css') }}"
     />
-    {{-- <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    /> --}}
     <link
       rel="stylesheet"
-      href="{{ asset('css/style.css') }}"
+      href="{{ asset('scss/app.css') }}"
     />
     <script src="{{ asset('js/about.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/contact.js') }}"></script>
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('js/news.js') }}"></script>
+
     <title>IT Service</title>
-    {{-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> --}}
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ URL('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css') }}"
-    />
+
   </head>
 
   <body>
